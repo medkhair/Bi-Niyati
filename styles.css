@@ -1,0 +1,620 @@
+/** General **/
+body{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+	position: relative;
+}
+.blackSection{
+	background-color: #000;
+}
+.whiteSection{
+	background-color: #FFF;
+}
+@font-face {
+  font-family: 'Hathem Bosteem'; /* Choose a name for the font */
+  src: url('font/Hathem Bosteem.ttf') format('truetype'); /* Path to the font file */
+}
+
+
+
+/** NAV **/
+nav{
+	/*font-family: 'Futura Std', sans-serif;*/
+}
+.navbar-brand{
+	width: 15%;
+	margin-left: 35px;
+}
+.nav-link{
+	font-size: 17px;
+	font-weight: bold;
+}
+.nav-item{
+	margin-right: 30px;
+}
+.navbar-text{
+	display: flex;
+	gap: 15px;
+	width: 30%;
+	align-items: center;
+}
+.navbar-text i{
+	font-size: 20px;
+	background-color: #1DD5E6;
+	color: #000;
+	border-radius: 50%;
+	width: 41px;
+	height: 41px;
+	text-align: center;
+	display: grid;
+	place-items: center;
+	font-weight: 100;
+}
+.navbar-text .navTxt{
+	color: #FFF;
+	font-size: 17px;
+	font-weight: bold !important;
+
+}
+
+@media (max-width: 480px){
+	.navbar-text{
+		width: 100%;
+	}
+	.navbar-text .navTxt{
+		width: 100%;
+	}
+}
+
+
+/** Banner **/
+#bannerCtnt{
+	position: relative;
+	background-color: rgba(0, 0, 0, .85);
+	width: 100%;
+	height: 980px;
+	color: #FFF;
+	display: flex;
+	justify-content: flex-end;
+}
+#bannerImg{
+	position: absolute;
+	right: 0;
+	top: -50px;
+	z-index: 0;
+}
+#bannerContainer{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: relative;
+  	z-index: 2;
+  	margin-bottom: 60px;
+}
+#bannerLeft{
+	width: 60%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 25px;
+}
+#bannerLeft h5{
+	font-family: 'Hathem Bosteem', sans-serif;
+	font-size: 50px;
+	background: -webkit-linear-gradient(#1DD5E6, #46AEF7);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+}
+#bannerLeft h1{
+	font-size: 50px;
+	font-weight: bold;
+}
+#bannerLeft p{
+	font-size: 20px;
+}
+#bannerLeft #finalBanner{
+	display: flex;
+	justify-content: flex-start;
+	gap: 40px;
+}
+#finalBanner p{
+	font-size: 30px;
+	font-family: 'Hathem Bosteem', sans-serif;
+}
+#bannerRight #banner1{
+	background: -webkit-linear-gradient(#1DD5E6, #46AEF7);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#bannerRight h2{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+
+
+
+/** prq **/
+#prq{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 93px;
+	margin-bottom: 150px;
+}
+#prqCtnt{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 50px;
+	margin: 0 auto 50px;
+}
+#prqImg{
+	position: relative;
+}
+#prqImg #frontImg{
+	position: absolute;
+	right: -25%;
+	bottom: -25%;
+}
+#prq #prqTxt{
+	width: 50%;
+	color: #000;
+	position: relative;
+}
+#prq #prqTxt h3{
+	font-size: 45px;
+	font-weight: bold;
+}
+#prq #prqTxt p{
+	font-size: 23px;
+	margin-bottom: 30px;
+}
+.blueButton{
+	background-image: linear-gradient(#1DD5E6, #46AEF7);
+	border: none;
+	border-radius: 100px;
+	height: 60px;
+	width: 334px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+	#prqCtnt{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 100px;
+	}
+	#prqCtnt{
+		text-align: center;
+	}
+    #prqImg img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #prqImg #frontImg {
+        right: -10%;
+        bottom: -10%;
+    }
+    #prq #prqTxt{
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    	width: 100%;
+    }
+    #prq #prqTxt h3 {
+        font-size: 2rem;
+    }
+
+    #prq #prqTxt p {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    #prqImg img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #prqImg #frontImg {
+        right: -5%;
+        bottom: -5%;
+    }
+
+    /* Reduce text sizes */
+    #prq #prqTxt h3 {
+        font-size: 1.8rem;
+    }
+
+    #prq #prqTxt p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #prqImg img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    #prqImg #frontImg {
+        right: -5%;
+        bottom: -5%;
+    }
+    #prq #prqTxt{
+    	width: 100%;
+    }
+    #prq #prqTxt h3 {
+        font-size: 1.5rem;
+    }
+
+    #prq #prqTxt p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/** about **/ 
+.about-section {
+  background-color: #000;
+  color: #fff; 
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.about-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.stats-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+.aboutDivider{
+	width: 100%;
+	height: 5px;
+	background-image: linear-gradient(to right, #1DD5E6 , #FFF);
+}
+.stat-item {
+	text-align: center;
+	width: 100%;
+	max-width: 200px;
+	display: flex;
+	grid-gap: 19px;
+}
+
+.stat-item img {
+	width: 70px;
+	height: 75px;
+	margin-bottom: 10px;
+}
+
+.stat-item h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.stat-item p {
+	font-size: 15px;
+	width: 100%;
+}
+.stat-itemText{
+	width: 100%;
+}
+
+
+/** puits **/
+#puits{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#puitsImg{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 60px;
+	flex-wrap: wrap;
+	
+}
+.pImg .pText{
+	padding-left: 10%;
+	padding-top: 40px;
+	color: #FFF !important;
+}
+.pImg .pText h4{
+	font-size: 28px;
+	font-weight: bold !important;
+	background: -webkit-linear-gradient(#1DD5E6, #46AEF7);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#puits button{
+	margin-bottom: 73px;
+}
+.pImg .pText p{
+	margin-top: 23px;
+	color: #FFF !important;
+	font-size: 20px;
+	font-weight: 300;
+}
+.pImg{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #000;
+	color: #FFF;
+	width: 450px;
+	height: 1200px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	margin-top: 70px;
+	margin-bottom: 93px;
+	position: relative;
+}
+#puits h3{
+	margin-top: 60px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold !important;
+	margin-bottom: 40px;
+	color: #000;
+}
+#puits p{
+	font-size: 25px;
+	width: 80%;
+	color: #000;
+}
+.price{
+	width: 212px;
+	height: 66px;
+	background-color: #F2F2F2;
+	transform: skewX(-20deg); 
+	transform-origin: left;
+	display: grid;
+	place-items: center;
+	border-radius: 10px;
+	position: absolute;
+	bottom: -20px;
+	left: -10px;
+}
+.price h5{
+	background: -webkit-linear-gradient(#1DD5E6, #46AEF7);
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/** How it works **/
+#hwItWorks{
+	display: flex;
+}
+#howCtnt{
+	background-color: rgba(0, 0, 0, .9);
+	flex-grow: 1;
+	height: 100%;
+}
+#inside{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#howTitle{
+	position: relative;
+	width: 100%;
+	margin-bottom: 80px;
+}
+#howTitle h2{
+	width: 100%;
+	font-size: 70px;
+	color: #000;
+	font-weight: bold;
+	-webkit-text-stroke: 1px #fff;
+	opacity: 15%;
+}
+#howTitle h4{
+	width: 100%;
+	font-size: 45px;
+	font-weight: bold;
+	color: #FFF;
+	position: absolute;
+	bottom: -20px;
+}
+#howButton{
+	margin-bottom: 75px;
+	margin-top: 40px;
+}
+#steps{
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 55px;
+}
+#howLeft{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 1000px;
+}
+.howCircle{
+	border-radius: 50%;
+	background-image: linear-gradient(#1DD5E6,#46AEF7);
+	width: 66px;
+	height: 66px;
+	border: 3px #FFF solid;
+}
+.howLine{
+	height: 30%;
+	background-image: linear-gradient(#1DD5E6,#46AEF7);
+	width: 3px;
+}
+.howTxt h5{
+	font-size: 27px;
+	font-weight: bold;
+}
+.howTxt p{
+	font-size: 18px;
+}
+#steps #howMiddle{
+	height: 1000px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+/** FAQ **/
+#faqCtnt{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 32px;
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+#faqCtnt h3{
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold !important;
+	margin-bottom: 60px;
+}
+.questionDiv{
+	text-align: left;
+	background-color: #F0F0F0;
+	border-radius: 20px;
+	padding-top: 40px;
+	padding-right: 6%;
+	padding-left: 6%;
+}
+.questionDiv .questionUp{
+	display: flex;
+	gap: 14px;
+}
+.questionUp h5{
+	font-size: 25px;
+	font-weight: bold !important;
+}
+.questionDiv p{
+	font-size: 18px;
+	padding-right: 6%;
+	padding-left: 6%;
+	margin-bottom: 30px;
+}
+.questionUp button{
+	color: #fff;
+	background-image: linear-gradient(#1DD5E6, #46AEF7);
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+}
+.questionUp button i{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/** Footer **/
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#footerLogo{
+	width: 69px;
+	height: 69px;
+	margin-top: 70px;
+}
+.LogoDes p{
+	width: 65%;
+
+}
+footer p {
+  margin: 0;
+}
+footer .fUp{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.LogoDes{
+	width: 50%;
+	margin-bottom: 40px;
+}
+.fService .list-unstyled{
+	margin-top: 60px;
+}
+.fService .list-unstyled li{
+	margin-bottom: 25px;
+	color: #FFF !important;
+}
+.fService .list-unstyled .bi-chevron-double-right{
+	color: #1DD5E6;
+}
+.fUnder{
+	background-color: rgba(217, 217, 217, .35);
+	height: 70px;
+	color: #FFF;
+	border-radius: 20px;
+}
+.fMedia{
+	display: flex;
+	justify-content: flex-end;
+	grid-gap: 40px;
+
+}
+.fAcounts{
+	font-size: 22px;
+}
